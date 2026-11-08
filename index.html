@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#08090D" />
+    <meta
+      name="description"
+      content="不刘名 Coding Workstation 提供 AI 辅助的软件开发、网站建设、环境配置与部署协助。让想法，成为现实。"
+    />
+    <meta property="og:title" content="不刘名 Coding Workstation" />
+    <meta property="og:description" content="让想法，成为现实。AI-assisted development and practical engineering." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>不刘名 Coding Workstation</title>
+    <script>
+      // Apply the saved language before the first paint to avoid a language flash.
+      ;(function () {
+        try {
+          var saved = localStorage.getItem('bcw.locale')
+          var locale = saved === 'en' || saved === 'zh-CN' ? saved : 'zh-CN'
+          document.documentElement.lang = locale
+          document.documentElement.dataset.locale = locale
+        } catch (error) {
+          document.documentElement.dataset.locale = 'zh-CN'
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>
+      <div style="padding: 24px; font-family: system-ui, sans-serif; color: #f5f7fa; background: #08090d">
+        不刘名 Coding Workstation 需要启用 JavaScript 才能浏览。<br />
+        Please enable JavaScript to explore 不刘名 Coding Workstation.
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

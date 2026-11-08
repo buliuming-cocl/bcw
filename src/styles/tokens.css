@@ -1,0 +1,117 @@
+/* ==========================================================================
+   BCW — Design tokens
+   A restrained, dark "Liquid Glass" system for a premium developer studio.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* Palette ---------------------------------------------------------------- */
+  --bg: #08090d;
+  --bg-soft: #10131a;
+  --bg-elevated: #151922;
+
+  --text: #f5f7fa;
+  --text-secondary: #9aa3b2;
+  --text-tertiary: #7e8797;
+
+  --blue: #a8c7fa;
+  --blue-bright: #d7e5ff;
+  --violet: #b9a7f8;
+  --violet-bright: #e3d9ff;
+  --cyan: #a5e6e0;
+  --green: #93e7b3;
+  --danger: #ffaaaa;
+  --warning: #ffd28a;
+
+  --line: rgba(255, 255, 255, 0.075);
+  --line-soft: rgba(255, 255, 255, 0.048);
+  --line-strong: rgba(255, 255, 255, 0.15);
+
+  --accent-gradient: linear-gradient(
+    112deg,
+    #d9e6ff 0%,
+    #a8c7fa 34%,
+    #b9a7f8 68%,
+    #e7ddff 100%
+  );
+  --accent-gradient-soft: linear-gradient(
+    112deg,
+    rgba(207, 224, 255, 0.2),
+    rgba(168, 199, 250, 0.08) 45%,
+    rgba(185, 167, 248, 0.16)
+  );
+
+  /* Glass ------------------------------------------------------------------ */
+  --surface: rgba(16, 19, 26, 0.58);
+  --surface-strong: rgba(17, 21, 29, 0.78);
+  --glass-fill:
+    linear-gradient(
+      138deg,
+      rgba(255, 255, 255, 0.078) 0%,
+      rgba(255, 255, 255, 0.022) 36%,
+      rgba(255, 255, 255, 0.042) 100%
+    ),
+    rgba(13, 16, 23, 0.5);
+  --glass-fill-strong:
+    linear-gradient(
+      138deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.028) 42%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    rgba(12, 15, 22, 0.68);
+  --glass-blur: 22px;
+  --glass-saturate: 145%;
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.11);
+
+  /* Radii ------------------------------------------------------------------ */
+  --r-xs: 12px;
+  --r-sm: 16px;
+  --r-md: 20px;
+  --r-lg: 28px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* Shadows ---------------------------------------------------------------- */
+  --shadow-sm: 0 8px 24px -14px rgba(0, 0, 0, 0.7);
+  --shadow-md:
+    0 28px 64px -38px rgba(0, 0, 0, 0.92),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  --shadow-lg:
+    0 48px 120px -56px rgba(0, 0, 0, 0.98),
+    0 12px 32px -24px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --shadow-float: 0 30px 80px -36px rgba(0, 0, 0, 0.88);
+
+  /* Layout ----------------------------------------------------------------- */
+  --container: 1200px;
+  --gutter: clamp(20px, 4.6vw, 56px);
+  --section-y: clamp(68px, 7.2vw, 100px);
+  --nav-h: 68px;
+  --nav-top: 14px;
+
+  /* Typography ------------------------------------------------------------- */
+  --font-sans:
+    "Inter Variable", "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Source Han Sans CN", "Noto Sans CJK SC", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  --font-mono:
+    "JetBrains Mono", "SFMono-Regular", "SF Mono", ui-monospace, Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  /* Motion ----------------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 680ms;
+
+  /* Layers ----------------------------------------------------------------- */
+  --z-ambient: 0;
+  --z-content: 1;
+  --z-sticky: 60;
+  --z-nav: 100;
+  --z-menu: 110;
+  --z-overlay: 200;
+}

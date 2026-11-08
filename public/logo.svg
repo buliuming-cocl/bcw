@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" role="img" aria-label="BCW">
+  <defs>
+    <linearGradient id="bcw-mark" x1="12" y1="10" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9E6FF" />
+      <stop offset="0.45" stop-color="#A8C7FA" />
+      <stop offset="1" stop-color="#B9A7F8" />
+    </linearGradient>
+    <linearGradient id="bcw-glass" x1="8" y1="4" x2="56" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22" />
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.03" />
+      <stop offset="1" stop-color="#A8C7FA" stop-opacity="0.12" />
+    </linearGradient>
+  </defs>
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="18" fill="#0B0E14" />
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="18" fill="url(#bcw-glass)" />
+  <rect x="1.85" y="1.85" width="60.3" height="60.3" rx="17.4" stroke="url(#bcw-mark)" stroke-opacity="0.62" stroke-width="1.2" />
+  <path d="M25 23.5 18 32l7 8.5" stroke="#F5F7FA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M39 23.5 46 32l-7 8.5" stroke="url(#bcw-mark)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M35.2 19.8 29 44.2" stroke="#F5F7FA" stroke-opacity="0.48" stroke-width="2.4" stroke-linecap="round" />
+  <circle cx="32" cy="52.5" r="1.6" fill="#A8C7FA" fill-opacity="0.9" />
+</svg>
